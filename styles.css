@@ -1,0 +1,119 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background: hsl(185, 75%, 39%);
+    margin: 0px; 
+    font-family: Kumbh Sans, sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    color: hsl(229, 23%, 23%);
+}
+
+span {
+    color: hsl(227, 10%, 46%);
+    font-weight: lighter;
+}
+
+.main-body {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    width: 100vw;
+}
+
+.top {
+    width: 50%;
+    background: url('./assets/bg-pattern-top.svg') no-repeat;
+    background-size: cover;
+    background-position: 100% -400px;
+}
+
+.bottom {
+    width: 50%;
+    background: url('./assets/bg-pattern-bottom.svg') no-repeat;
+    background-size: cover;
+    background-position: 0px 400px;
+}
+
+.card-wrapper {
+    background: white;
+    position: absolute;
+    height: 380px;
+    display: flex;
+    flex-direction: column;
+    top: 50%;
+    left: 50%;
+    margin-top: -190px;
+    margin-left: -175px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.card-head {
+    height: 180px;
+}
+
+.card-main {
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-main img {
+    border-radius: 100%;
+    border: 5px solid white;
+    margin-top: -26%;
+    padding: 0px;
+    background: white;
+}
+
+.card-main p {
+    margin: auto;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.card-main p span {
+    font-size: 1em;
+}
+
+.card-main span {
+    margin: auto;
+    margin-top: -20px;
+    font-size: 0.8em;
+}
+
+.card-footer {
+    height: 80px;
+    background: transparent;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer-tiles {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.footer-tiles span {
+    font-size: 0.6em;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+@media only screen and (max-width: 400px) {
+    .card-wrapper {
+        width: 320px;
+        display: flex;
+        margin-left: -160px;
+    }
+}
